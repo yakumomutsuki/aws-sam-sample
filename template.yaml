@@ -21,11 +21,16 @@ Resources:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
-            Path: /hello
+            Path: /sample/{id}
+            Method: get
+        HelloWorld:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /sample2/{id}
             Method: get
     Metadata:
       DockerTag: ruby2.7-v1
-      DockerContext: ./hello_world
+      DockerContext: ./src
       Dockerfile: Dockerfile
 
 Outputs:

@@ -54,7 +54,7 @@
       "user": null
     },
     "path": "/prod/path/to/resource",
-    "resourcePath": "/{proxy+}",
+    "resourcePath": "/sample/{id}/{name}",
     "httpMethod": "POST",
     "apiId": "1234567890",
     "protocol": "HTTP/1.1"
